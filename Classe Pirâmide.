@@ -1,0 +1,31 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package com.mycompany.mavenproject1;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author ht3000222
+ */
+public class Pirâmide extends Forma {
+    
+    public Pirâmide() {
+        Scanner scan = new Scanner( System.in );
+        System.out.print("Entre com o valor da área da base da piramide: ");
+        float numerobase = scan.nextFloat();
+        System.out.println("Entre com o valor da área lateral da piramide: ");
+        float numerolateral = scan.nextFloat();
+        System.out.println("Entre com o valor da altura da piramide: ");
+        float numeroaltura = scan.nextFloat();
+        System.out.println("Entre com o valor da lateral da piramide: ");
+        float numerolado = scan.nextFloat();
+        System.out.println(" Área : " + (numerobase+numerolateral));
+        System.out.println(" Volume: " + (1/3*numerobase*numeroaltura));
+        System.out.println(" Perímetro: " + (4*(numerolado*numerolado*numerolado)));
+        
+    }
+}
