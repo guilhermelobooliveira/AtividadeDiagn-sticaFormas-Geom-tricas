@@ -1,0 +1,53 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package com.mycompany.mavenproject1;
+import java.util.Scanner;
+import javax.swing.JOptionPane;
+
+/**
+ *
+ * @author Gabriel Vinicius Gomes Anazário HT3000222 | Guilherme Lobo de Oliveira HT3000869
+ */
+public class main {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        System.out.println( "Quadrado");
+        Quadrado quadrado = new Quadrado();
+        quadrado.getAltura();
+        quadrado.getLargura();
+        System.out.println( "Triângulo");
+        Triângulo triângulo = new Triângulo();
+        triângulo.getAltura();
+        triângulo.getLargura();
+        System.out.println( "Pirâmide");
+        Pirâmide pirâmide = new Pirâmide();
+        pirâmide.getAltura();
+        pirâmide.getLargura();
+        System.out.println( "Cubo");
+        Cubo cubo = new Cubo();
+        cubo.getAltura();
+        cubo.getLargura();
+        System.out.println( "Retângulo");
+        Retângulo retângulo = new Retângulo();
+        retângulo.getAltura();
+        retângulo.getLargura();
+        System.out.println( "Escolha a forma que deseja criar ");
+        String escForma;
+        Scanner scanIn = new Scanner(System.in);
+        escForma = scanIn.nextLine();
+        Forma forma = FabricaForma.getForma( escForma );
+        // mostra o valor
+        if( forma!= null ) {
+        System.out.println( "Você escolheu uma forma válida" );
+        }else{
+        System.out.println( "Forma indisponível"); 
+        }
+    }
+    
+}
