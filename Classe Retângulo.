@@ -1,0 +1,32 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package com.mycompany.mavenproject1;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author ht3000222
+ */
+public class Retângulo extends Forma{
+    
+    public Retângulo() {
+        
+        Scanner scan = new Scanner( System.in );
+        System.out.print(" Insira o valor da base do retangulo : ");
+        float numeroaltura = scan.nextFloat();
+        System.out.print(" Insira o valor da altura do retangulo : ");
+        float numerobase = scan.nextFloat();
+        System.out.println(" Insira o comprimento do retangulo: ");
+        float numerocomprimento = scan.nextFloat();
+        System.out.println(" Insira a largura do retangulo: ");
+        float numerolargura = scan.nextFloat();
+        System.out.println(" Área : " + numeroaltura*numerobase);
+        System.out.println(" Perimetro: " + (numeroaltura+numeroaltura+numerobase+numerobase));
+        System.out.println(" Volume: " + (numerocomprimento*numerolargura*numeroaltura));
+        
+    }
+}
