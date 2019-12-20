@@ -1,0 +1,23 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package com.mycompany.mavenproject1;
+
+/**
+ *
+ * @author ht3000222
+ */
+public class FabricaForma {
+  public static Forma getForma( String tipoForma ) {
+    switch(tipoForma){
+    case "Quadrado": return new Quadrado();
+    case "Triângulo": return new Triângulo();
+    case "Pirâmide": return new Pirâmide();
+    case "Cubo": return new Cubo(); 
+    case "Retângulo": return new Retângulo(); 
+    default: return null;  
+    }
+ }
+}
