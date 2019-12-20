@@ -1,0 +1,26 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package com.mycompany.mavenproject1;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author ht3000222
+ */
+public class Cubo extends Forma {
+
+    public Cubo() {
+        
+        Scanner scan = new Scanner( System.in );
+        System.out.print(" Insira o valor do lado do cubo : ");
+        float numeroaltura = scan.nextFloat();
+        System.out.println(" Perímetro : " + (numeroaltura*12));
+        System.out.println(" Área : " + (numeroaltura*numeroaltura*6));
+        System.out.println(" Volume : " + (numeroaltura*numeroaltura*numeroaltura));
+    }
+    
+}
